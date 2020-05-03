@@ -4,7 +4,7 @@
 <head>
 	<title>Alex's Resume</title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
 
 	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
@@ -30,7 +30,7 @@
 	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
 		<div class="container">
 			<a class="navbar-brand" href="index.html">Alexandru</a>
-			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
+			<button class="navbar-toggler" type="button" visibility="true" data-toggle="collapse"
 				data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="oi oi-menu"></span> Menu
 			</button>
@@ -48,20 +48,16 @@
 			</div>
 		</div>
 	</nav>
-
+	
 	<section id="home-section" class="hero">
 		<div class="home-slider  owl-carousel">
 			<div class="slider-item ">
-				<div class="overlay"></div>
 				<div class="container">
-					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
-						data-scrollax-parent="true">
+					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end">
 						<div class="one-third js-fullheight order-md-last img"
 							style="background-image:url(images/portraits/bg_1_alex.jpg);">
-							<div class="overlay"></div>
 						</div>
-						<div class="one-forth d-flex  align-items-center ftco-animate"
-							data-scrollax=" properties: { translateY: '70%' }">
+						<div class="one-forth d-flex  align-items-center">
 							<div class="text">
 								<span class="subheading">Hello!</span>
 								<h1 class="mb-4 mt-3">I'm <span>Alexandru Grigoras</span></h1>
@@ -73,7 +69,8 @@
 			</div>
 		</div>
 	</section>
-
+		
+	
 	<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
 		<div class="container">
 			<div class="row d-flex">
@@ -389,15 +386,22 @@
 					</div>
 				</div>
 				<div class="col-md-6">
-					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(images/projects/3d_printer_pro.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3>MendelMax Direct Drive</h3>
-							<span>3D Printer</span>
+					<div class="project img ftco-animate d-flex justify-content-center align-items-center">
+						<div style="left: 0px; width: 100%; height: 0px; position: relative; padding-bottom: 56.25%; overflow: hidden;">
+							<iframe src="liquid_animation.html"
+										allowfullscreen
+										style="position: absolute; top: 0px; left: 0px; height: 100%; width: 1px; min-width: 100%; *width: 100%;"
+										frameborder="0"
+										scrolling="no"
+										name="Interactive view">
+							</iframe>
+							<div class="text">
+								<h3>Drag to rotate the printer. Double click for fullscreen.</h3>
+							</div>
 						</div>
 					</div>
 				</div>
+				
 
 				<div class="col-md-6">
 					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
@@ -423,20 +427,21 @@
 					<div class="row">
 						<div class="col-md-12">
 							<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-								style="background-image: url(images/projects/3d_printer_old.jpg);">
+								style="background-image: url(images/projects/corexy_1.jpg);">
 								<div class="overlay"></div>
 								<div class="text text-center p-4">
-									<h3>MendelMax Original Model</h3>
-									<span>3D Printer</span>
+									<h3>Liquid</h3>
+									<span>3D Printer</span><br/>
+									<span>Made in collaboration with Serban Chisca</span>
 								</div>
 							</div>
 						</div>
 						<div class="col-md-12">
 							<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-								style="background-image: url(images/projects/corexy_1.jpg);">
+								style="background-image: url(images/projects/corexy_2.jpg);">
 								<div class="overlay"></div>
 								<div class="text text-center p-4">
-									<h3>CoreXY</h3>
+									<h3>Liquid</h3>
 									<span>3D Printer</span><br/>
 									<span>Made in collaboration with Serban Chisca</span>
 								</div>
@@ -458,12 +463,11 @@
 
 				<div class="col-md-6">
 					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(images/projects/corexy_2.jpg);">
+						style="background-image: url(images/projects/3d_printer_old.jpg);">
 						<div class="overlay"></div>
 						<div class="text text-center p-4">
-							<h3>CoreXY</h3>
-							<span>3D Printer</span><br/>
-							<span>Made in collaboration with Serban Chisca</span>
+							<h3>MendelMax Original Model</h3>
+							<span>3D Printer</span>
 						</div>
 					</div>
 				</div>
@@ -605,11 +609,12 @@
 					<div class="ftco-footer-widget mb-4">
 						<h2 class="ftco-heading-2">Services</h2>
 						<ul class="list-unstyled">
-							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Web Design</a></li>
-							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Web Development</a></li>
-							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Business Strategy</a></li>
-							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Data Analysis</a></li>
-							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Graphic Design</a></li>
+							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Software Design</a></li>
+							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Hardware Design</a></li>
+							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Artificial Intelligence</a></li>
+							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Photo/Video Editing</a></li>
+							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>3D Modelling / Printing</a></li>
+							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Management</a></li>
 						</ul>
 					</div>
 				</div>
