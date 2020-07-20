@@ -1,677 +1,496 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-	<title>Alex's Resume</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
-
-	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-
-	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-	<link rel="stylesheet" href="css/animate.css">
-
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<link rel="stylesheet" href="css/magnific-popup.css">
-
-	<link rel="stylesheet" href="css/aos.css">
-
-	<link rel="stylesheet" href="css/ionicons.min.css">
-
-	<link rel="stylesheet" href="css/flaticon.css">
-	<link rel="stylesheet" href="css/icomoon.css">
-	<link rel="stylesheet" href="css/style.css">
-</head>
-
-<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-
-
-	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-		<div class="container">
-			<a class="navbar-brand" href="index.html">Alexandru</a>
-			<button class="navbar-toggler" type="button" visibility="true" data-toggle="collapse"
-				data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="oi oi-menu"></span> Menu
-			</button>
-
-			<div class="collapse navbar-collapse" id="ftco-nav">
-				<ul class="navbar-nav nav ml-auto">
-					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-					<li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
-					<li class="nav-item"><a href="#services-section" class="nav-link"><span>Services</span></a></li>
-					<li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
-					<li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
-					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-	
-	<section id="home-section" class="hero">
-		<div class="home-slider  owl-carousel">
-			<div class="slider-item ">
-				<div class="container">
-					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end">
-						<div class="one-third js-fullheight order-md-last img"
-							style="background-image:url(images/portraits/bg_1_alex.jpg);">
-						</div>
-						<div class="one-forth d-flex  align-items-center">
-							<div class="text">
-								<span class="subheading">Hello!</span>
-								<h1 class="mb-4 mt-3">I'm <span>Alexandru Grigoras</span></h1>
-								<h2 class="mb-4">A Software Engineer</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	
-	<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
-		<div class="container">
-			<div class="row d-flex">
-				<div class="col-md-6 col-lg-5 d-flex">
-					<div class="img-about img d-flex align-items-stretch">
-						<div class="overlay"></div>
-						<div class="img d-flex align-self-stretch align-items-center"
-							style="background-image:url(images/portraits/bg_2_alex.png);">
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-					<div class="row justify-content-start pb-3">
-						<div class="col-md-12 heading-section ftco-animate">
-							<h1 class="big">About</h1>
-							<h2 class="mb-4">About Me</h2>
-							<p>Creative and people-oriented software engineer with 1 year experience in a tech startup with focus on software and hardware projects.
-								Skilled in algorithms, artificial inteligence, data science, web development and robotics.</p>
-							<ul class="about-info mt-4 px-md-0 px-2">
-								<li class="d-flex"><span>Name:</span> <span>Alexandru Grigoras</span></li>
-								<li class="d-flex"><span>Specialization:</span> <span>Software Engineer</span></li>
-								<li class="d-flex"><span>Email:</span> <span>alexgrigoras10@gmail.com</span></li>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="img/favicon.png" type="image/png">
+        <title>Alex's Portfolio</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="vendors/linericon/style.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
+        <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+        <link rel="stylesheet" href="vendors/animate-css/animate.css">
+        <link rel="stylesheet" href="vendors/popup/magnific-popup.css">
+        <link rel="stylesheet" href="vendors/flaticon/flaticon.css">
+        <!-- main css -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+    </head>
+    <body>
+        
+        <!--================Header Menu Area =================-->
+        <header class="header_area">
+            <div class="main_menu">
+            	<nav class="navbar navbar-expand-lg navbar-light">
+					<div class="container box_1620">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<a class="navbar-brand logo_h" href="index.html"><img src="img/logo.jpg" alt=""></a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+							<ul class="nav navbar-nav menu_nav ml-auto">
+								<li class="nav-item active"><a class="nav-link" href="#home_section">Home</a></li> 
+								<li class="nav-item"><a class="nav-link" href="#about_section">About</a></li> 
+								<li class="nav-item"><a class="nav-link" href="#gallery_section">Projects</a></li> 
+								<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
 							</ul>
-						</div>
+						</div> 
 					</div>
-					<div class="counter-wrap ftco-animate d-flex mt-md-3">
-						<div class="text">
-							<p class="mb-4">
-								<span class="number" data-number="10">0</span>
-								<span>projects complete</span>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="ftco-section ftco-no-pb" id="resume-section">
-		<div class="container">
-			<div class="row justify-content-center pb-5">
-				<div class="col-md-10 heading-section text-center ftco-animate">
-					<h1 class="big big-2">Resume</h1>
-					<h2 class="mb-4">Resume</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">Education</span>
-					</div>
-					<div class="resume-wrap ftco-animate">
-						<span class="date">2019-2021</span>
-						<h2>Master's Degree</h2>
-						<span class="position">Faculty of Automatic Control and Computer Engineering, Distributed
-							Sistems and Web Technologies, "Gh. Asachi" Technical University </span>
-						<p class="mt-2"><b>Thesis:</b> Determining Influential Users on YouTube</p>
-					</div>
-					<div class="resume-wrap ftco-animate">
-						<span class="date">2015-2019</span>
-						<h2>Bachelor's Degree</h2>
-						<span class="position">Faculty of Automatic Control and Computer Engineering, Department of
-							Computer Science and Engineering, "Gh. Asachi" Technical University </span>
-						<p class="mt-2"><b>Thesis:</b> Consumer Perception of Online Multimedia</p>
-						<p class="mt-2"><b>Certificates:</b> Psiho-Pedagogical Module 1</p>
-					</div>
-					<div class="resume-wrap ftco-animate">
-						<span class="date">2007-2015</span>
-						<h2>School & High School Diploma</h2>
-						<span class="position">Computer Science High School "Gr. Moisil"</span>
-						<p class="mt-2"></p>
-					</div>
-				</div>
-
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">Work Experience</span>
-					</div>
-					<div class="resume-wrap ftco-animate">
-						<span class="date">09/2017 – 08/2018</span>
-						<h2>Project Manager</h2>
-						<span class="position">IRIS Robotics</span>
-						<p class="mt-2">- Built an improved Robotic Head with human-like Skin.</p>
-						<p class="mt-2">- Added support for the Chatting Robot to work for the Romanian market</p>
-						<p class="mt-2">- Created Automation Systems for Christmas Decorations for Shopping Centers.</p>
-					</div>
-					<div class="resume-wrap ftco-animate">
-						<span class="date">07/2017 – 09/2017</span>
-						<h2>Summer Internship </h2>
-						<span class="position">Continental Automotive Romania</span>
-						<p class="mt-2">- Designed optimized parts for improving the print quality of the "Prusa i3" 3D printer.</p>
-						<p class="mt-2">- Optimized object slicing for optimal performance.</p>
-						<p class="mt-2">- Created an easy swappable printer head to create a 3in1 machine (3P Printer, CNC Mill and Laser Engraver).</p>
-					</div>
-					<div class="resume-wrap ftco-animate">
-						<span class="date">07/2016–09/2016</span>
-						<h2>Summer Internship </h2>
-						<span class="position">Continental Automotive Romania</span>
-						<p class="mt-2">- Learned CAN communication protocol</p>
-						<p class="mt-2">- Developed a gateway to connect multiple nodes</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="ftco-section" id="services-section">
-		<div class="container">
-			<div class="row justify-content-center py-5">
-				<div class="col-md-12 heading-section text-center ftco-animate">
-					<h1 class="big big-2">Services</h1>
-					<h2 class="mb-4">Services</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a class="services-1">
-						<span class="icon">
-							<i class="flaticon-web-design"></i>
-						</span>
-						<div class="desc">
-							<h3 class="mb-5">Software Design</h3>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a class="services-1">
-						<span class="icon">
-							<i class="flaticon-ux-design"></i>
-						</span>
-						<div class="desc">
-							<h3 class="mb-5">Hardware Design</h3>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a class="services-1">
-						<span class="icon">
-							<i class="flaticon-innovation"></i>
-						</span>
-						<div class="desc">
-							<h3 class="mb-5">Artificial Intelligence</h3>
-						</div>
-					</a>
-				</div>
-
-				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a class="services-1">
-						<span class="icon">
-							<i class="flaticon-analysis"></i>
-						</span>
-						<div class="desc">
-							<h3 class="mb-5">Photo / Video Editing</h3>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a class="services-1">
-						<span class="icon">
-							<i class="flaticon-flasks"></i>
-						</span>
-						<div class="desc">
-							<h3 class="mb-5">3D Modelling / Printing</h3>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a class="services-1">
-						<span class="icon">
-							<i class="flaticon-ideas"></i>
-						</span>
-						<div class="desc">
-							<h3 class="mb-5">Management</h3>
-						</div>
-					</a>
-				</div>
-			</div>
-		</div>
-	</section>
-
-
-	<section class="ftco-section" id="skills-section">
-		<div class="container">
-			<div class="row justify-content-center pb-5">
-				<div class="col-md-12 heading-section text-center ftco-animate">
-					<h1 class="big big-2">Skills</h1>
-					<h2 class="mb-4">My Skills</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>C/C++</h3>
-						<div class="progress">
-							<div class="progress-bar color-1" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-								aria-valuemax="100" style="width:70%">
+            	</nav>
+            </div>
+        </header>
+        <!--================Header Menu Area =================-->
+        
+        <!--================Home Banner Area =================-->
+        <section id="home_section" class="home_banner_area">
+           	<div class="container box_1620">
+           		<div class="banner_inner d-flex align-items-center">
+					<div class="banner_content">
+						<div class="media">
+							<div class="d-flex">
+								<img src="img/personal.jpg" width="668px" alt="">
 							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>Python</h3>
-						<div class="progress">
-							<div class="progress-bar color-2" role="progressbar" aria-valuenow="85" aria-valuemin="0"
-								aria-valuemax="100" style="width:60%">
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>Java</h3>
-						<div class="progress">
-							<div class="progress-bar color-3" role="progressbar" aria-valuenow="95" aria-valuemin="0"
-								aria-valuemax="100" style="width:40%">
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>AI</h3>
-						<div class="progress">
-							<div class="progress-bar color-6" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-								aria-valuemax="100" style="width:20%">
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>NLP</h3>
-						<div class="progress">
-							<div class="progress-bar color-6" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-								aria-valuemax="100" style="width:25%">
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>Web Dev</h3>
-						<div class="progress">
-							<div class="progress-bar color-4" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-								aria-valuemax="100" style="width:30%">
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>Photo Editing</h3>
-						<div class="progress">
-							<div class="progress-bar color-5" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-								aria-valuemax="100" style="width:40%">
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>Video Editing</h3>
-						<div class="progress">
-							<div class="progress-bar color-6" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-								aria-valuemax="100" style="width:50%">
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>3D Editing</h3>
-						<div class="progress">
-							<div class="progress-bar color-6" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-								aria-valuemax="100" style="width:35%">
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>3D Printing</h3>
-						<div class="progress">
-							<div class="progress-bar color-6" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-								aria-valuemax="100" style="width:60%">
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-
-	<section class="ftco-section ftco-project" id="projects-section">
-		<div class="container">
-			<div class="row justify-content-center pb-5">
-				<div class="col-md-12 heading-section text-center ftco-animate">
-					<h1 class="big big-2">Projects</h1>
-					<h2 class="mb-4">My Projects</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6">
-					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(images/projects/3d_printer_1.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3>MendelMax Dual Head All Metal</h3>
-							<span>3D Printer</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="project img ftco-animate d-flex justify-content-center align-items-center">
-						<div style="left: 0px; width: 100%; height: 0px; position: relative; padding-bottom: 53%; overflow: hidden;">
-							<iframe src="liquid_animation.html"
-										allowfullscreen
-										style="position: absolute; top: 0px; left: 0px; height: 100%; width: 1px; min-width: 100%; *width: 100%;"
-										frameborder="0"
-										scrolling="no"
-										name="Interactive view">
-							</iframe>
-							<div class="text">
-								<h3>Drag to rotate the printer. Double click for fullscreen.</h3>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-
-				<div class="col-md-6">
-					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(images/projects/3d_printer_2.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3>MendelMax Dual Head All Metal</h3>
-							<span>3D Printer</span>
-						</div>
-					</div>
-
-					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(images/projects/3d_printer_3.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3>MendelMax Dual Head All Metal</h3>
-							<span>3D Printer</span>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-6">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-								style="background-image: url(images/projects/corexy_1.jpg);">
-								<div class="overlay"></div>
-								<div class="text text-center p-4">
-									<h3>Liquid</h3>
-									<span>3D Printer</span><br/>
-									<span>Made in collaboration with Serban Chisca</span>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-12">
-							<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-								style="background-image: url(images/projects/corexy_2.jpg);">
-								<div class="overlay"></div>
-								<div class="text text-center p-4">
-									<h3>Liquid</h3>
-									<span>3D Printer</span><br/>
-									<span>Made in collaboration with Serban Chisca</span>
+							<div class="media-body">
+								<div class="personal_text">
+									<h6>Hello, I am</h6>
+									<h3 style="color:white">Alexandru GRIGORAS</h3>
+									<h4>A SOFTWARE ENGINEER</h4>
+									<ul class="list basic_info">
+										<li><a href="#"><i class="lnr lnr-envelope"></i> alexgrigoras10@gmail.com</a></li>
+										<li><a href="#"><i class="lnr lnr-home"></i> Iasi, Romania</a></li>
+									</ul>
+									<ul class="list personal_social">
+										<li><a href="https://www.linkedin.com/in/alexandru-grigoras-3916a011b/"><i class="fa fa-linkedin" style="color:black"></i></a></li>
+										<li><a href="https://twitter.com/10Grigoras"><i class="fa fa-twitter" style="color:black"></i></a></li>
+										<li><a href="https://github.com/alexgrigoras"><i class="fa fa-github" style="color:black"></i></a></li>
+										<li><a href="https://bitbucket.org/%7B99eda1ab-2767-49c8-bc8b-e9597ce0e755%7D/"><i class="fa fa-bitbucket" style="color:black"></i></a></li>										
+									</ul>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				
-				<div class="col-md-6">
-					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(images/projects/3d_printer_old.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3>MendelMax Original Model</h3>
-							<span>3D Printer</span>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-6">
-					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(images/projects/tdb_car.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3>Autonomous Vehicle</h3>
-							<span>1/10 scale, driving between walls</span>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-6">
-					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(images/projects/spitfire_model.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3>Spitfire RC Plane</h3>
-							<span>Model made from FliteTest</span><br/>
-							<span>Developed Flight Controller and Remote Controller</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(images/projects/smart_house.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3>Smart House</h3>
-							<span>Model</span>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-4">
-					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(images/projects/line_follower.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3>Line Follower</h3>
-							<span>Robot</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(images/projects/autonomous_robot.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3>Autonomous</h3>
-							<span>Robot</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(images/projects/video_create.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3>Video Editing</h3>
-							<span>Workstation</span>
-						</div>
-					</div>
-				</div>
-
-			</div>
-		</div>
-	</section>
-
-	<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
-		<div class="container">
-			<div class="row justify-content-center mb-5 pb-3">
-				<div class="col-md-7 heading-section text-center ftco-animate">
-					<h1 class="big big-2">Contact</h1>
-					<h2 class="mb-4">Contact Me</h2>
-				</div>
-			</div>
-
-			<div class="row d-flex contact-info mb-5">
-				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
-					<div class="align-self-stretch box p-4 text-center">
-						<div class="icon d-flex align-items-center justify-content-center">
-							<a href="mailto:alexgrigoras10@gmail.com"><span class="icon-paper-plane"></span></a>
-						</div>
-						<h3 class="mb-4"><a href="mailto:alexgrigoras10@gmail.com">Email Address</a></h3>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
-					<div class="align-self-stretch box p-4 text-center">
-						<div class="icon d-flex align-items-center justify-content-center">
-							<a href="https://www.linkedin.com/in/alexandru-grigoras-3916a011b/"><img
-									src="images/icons/linkedin_icon.png" alt="Linked Icon" height="50px" width="50px"></a>
-						</div>
-						<h3 class="mb-4"><a
-								href="https://www.linkedin.com/in/alexandru-grigoras-3916a011b/">Linkedin</a></h3>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
-					<div class="align-self-stretch box p-4 text-center">
-						<div class="icon d-flex align-items-center justify-content-center">
-							<a href="https://github.com/alexgrigoras"><img src="images/icons/github_icon.png"
-									alt="GitHub Icon" height="50px" width="50px"></a>
-						</div>
-						<h3 class="mb-4"><a href="https://github.com/alexgrigoras">GitHub</a></h3>
-					</div>
-				</div>
-
-				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
-					<div class="align-self-stretch box p-4 text-center">
-						<div class="icon d-flex align-items-center justify-content-center">
-							<a href="https://bitbucket.org/%7B99eda1ab-2767-49c8-bc8b-e9597ce0e755%7D/"><img
-									alt="Bitbucket Icon" src="images/icons/bitbucket_icon.png" height="50px" width="50px"></a>
-						</div>
-						<h3 class="mb-4"><a
-								href="https://bitbucket.org/%7B99eda1ab-2767-49c8-bc8b-e9597ce0e755%7D/">BitBucket</a>
-						</h3>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-
-	<footer class="ftco-footer ftco-section">
-		<div class="container">
-			<div class="row mb-5">
-				<div class="col-md">
-					<div class="ftco-footer-widget mb-4">
-						<h2 class="ftco-heading-2">About</h2>
-						<p>I'm a self-motivated, creative engineer with the desire to create a community of passionate
-							people trying to solve other people needs </p>
-					</div>
-				</div>
-				<div class="col-md">
-					<div class="ftco-footer-widget mb-4 ml-md-4">
-						<h2 class="ftco-heading-2">Links</h2>
-						<ul class="list-unstyled">
-							<li><a href="#home-section"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
-							<li><a href="#about-section"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
-							<li><a href="#services-section"><span class="icon-long-arrow-right mr-2"></span>Services</a></li>
-							<li><a href="#projects-section"><span class="icon-long-arrow-right mr-2"></span>Projects</a></li>
-							<li><a href="#contact-section"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md">
-					<div class="ftco-footer-widget mb-4">
-						<h2 class="ftco-heading-2">Services</h2>
-						<ul class="list-unstyled">
-							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Software Design</a></li>
-							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Hardware Design</a></li>
-							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Artificial Intelligence</a></li>
-							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Photo/Video Editing</a></li>
-							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>3D Modelling / Printing</a></li>
-							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Management</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md">
-					<div class="ftco-footer-widget mb-4">
-						<h2 class="ftco-heading-2">Have a Questions?</h2>
-						<div class="block-23 mb-3">
-							<ul>
-								<li><span class="icon icon-map-marker"></span><span class="text">Iasi, Romania</span>
+            </div>
+        </section>
+        <!--================End Home Banner Area =================-->
+        
+        <!--================Welcome Area =================-->
+        <section id="about_section" class="welcome_area p_120">
+        	<div class="container">
+        		<div class="row welcome_inner">
+        			<div class="col-lg-6">
+        				<div class="welcome_text">
+        					<h4>About Myself</h4>
+        					<p>A creative and people-oriented software engineer with 1 year experience in a tech startup with focus on software and hardware projects.
+										Skilled in algorithms, artificial inteligence, data science, web development and robotics.</p>
+        					<div class="row">
+ 
+        						<div class="col-md-4">
+        							<div class="wel_item">
+        								<i class="lnr lnr-book"></i>
+        								<h4>11</h4>
+        								<p>Projects</p>
+        							</div>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="col-lg-6">
+        				<div class="tools_expert">
+        					<div class="skill_main">
+								<div class="skill_item">
+									<h4>Programming (Python, C/C++, Java) <span class="counter">80</span>%</h4>
+									<div class="progress_br">
+										<div class="progress">
+											<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</div>
+								</div>
+								<div class="skill_item">
+									<h4>Web Development (Backend) <span class="counter">50</span>%</h4>
+									<div class="progress_br">
+										<div class="progress">
+											<div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</div>
+								</div>
+								<div class="skill_item">
+									<h4>Artificial Intelligence <span class="counter">40</span>%</h4>
+									<div class="progress_br">
+										<div class="progress">
+											<div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</div>
+								</div>
+								<div class="skill_item">
+									<h4>Data Science <span class="counter">30</span>%</h4>
+									<div class="progress_br">
+										<div class="progress">
+											<div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</div>
+								</div>
+								<div class="skill_item">
+									<h4>LInux OS <span class="counter">30</span>%</h4>
+									<div class="progress_br">
+										<div class="progress">
+											<div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</div>
+								</div>
+								<div class="skill_item">
+									<h4>Project Management <span class="counter">10</span>%</h4>
+									<div class="progress_br">
+										<div class="progress">
+											<div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </section>
+        <!--================End Welcome Area =================-->
+        
+        <!--================My Tabs Area =================-->
+        <section id="tabs_section" class="mytabs_area p_120">
+        	<div class="container">
+        		<div class="tabs_inner">
+					<ul class="nav nav-tabs" id="myTab" role="tablist">
+						<li class="nav-item">
+							<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">My Experiences</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">My Education</a>
+						</li>
+					</ul>
+					<div class="tab-content" id="myTabContent">
+						<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+							<ul class="list">
+								<li>
+									<span></span>
+									<div class="media">
+										<div class="d-flex">
+											<p>09/2017 – 08/2018</p>
+										</div>
+										<div class="media-body">
+											<h4>Project Manager - IRIS Robotics</h4>
+											<p class="mt-2">- Built an improved Robotic Head with human-like Skin.</p>
+											<p class="mt-2">- Added support for the Chatting Robot to work for the Romanian market</p>
+											<p class="mt-2">- Created Automation Systems for Christmas Decorations for Shopping Centers.</p>
+										</div>
+									</div>
 								</li>
-								<!--<li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>-->
-								<li><a href="#"><span class="icon icon-envelope"></span><span
-											class="text">alexgrigoras10@gmail.com</span></a></li>
+								<li>
+									<span></span>
+									<div class="media">
+										<div class="d-flex">
+											<p>07/2017 – 09/2017</p>
+										</div>
+										<div class="media-body">
+											<h4>Summer Internship - Continental Automotive Romania</h4>
+											<p class="mt-2">- Designed optimized parts for improving the print quality of the "Prusa i3" 3D printer.</p>
+											<p class="mt-2">- Optimized object slicing for optimal performance.</p>
+											<p class="mt-2">- Created an easy swappable printer head to create a 3in1 machine (3P Printer, CNC Mill and Laser Engraver).</p>
+										</div>
+									</div>
+								</li>
+								<li>
+								<span></span>
+									<div class="media">
+										<div class="d-flex">
+											<p>07/2016–09/2016</p>
+										</div>
+										<div class="media-body">
+											<h4>Summer Internship - Continental Automotive Romania</h4>
+											<p class="mt-2">- Learned CAN communication protocol</p>
+											<p class="mt-2">- Developed a gateway to connect multiple nodes</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+							<ul class="list">
+								<li>
+									<span></span>
+									<div class="media">
+										<div class="d-flex">
+											<p>09/2019-07/2021</p>
+										</div>
+										<div class="media-body">
+											<h4>Master's Degree</h4>
+											<p>Faculty of Automatic Control and Computer Engineering, Distributed
+												Sistems and Web Technologies, "Gh. Asachi" Technical University</p>
+											<p class="mt-2"><b>Thesis:</b> Determining Influential Users on YouTube</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<span></span>
+									<div class="media">
+										<div class="d-flex">
+											<p>09/2015-07/2019</p>
+										</div>
+										<div class="media-body">
+											<h4>Bachelor's Degree</h4>
+											<p>Faculty of Automatic Control and Computer Engineering, Information Technology, 
+												"Gh. Asachi" Technical University</p>
+											<p class="mt-2"><b>Thesis:</b> Consumer Perception of Online Multimedia</p>
+										</div>
+									</div>
+								</li>
+								<li>
+								<span></span>
+									<div class="media">
+										<div class="d-flex">
+											<p>08/2007-06/2015</p>
+										</div>
+										<div class="media-body">
+											<h4>School & High School Diploma</h4>
+											<p>Computer Science High School "Gr. Moisil"</p>
+										</div>
+									</div>
+								</li>
 							</ul>
 						</div>
 					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12 text-center">
-
-					<p>
-						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						Copyright &copy;
-						<script>document.write(new Date().getFullYear());</script> All rights reserved | This template
-						is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a
-							href="https://colorlib.com" target="_blank">Colorlib</a>
-						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-					</p>
-				</div>
-			</div>
-		</div>
-	</footer>
-
-
-
-	<!-- loader -->
-	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
-			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
-			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
-				stroke="#F96D00" /></svg></div>
-
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery-migrate-3.0.1.min.js"></script>
-	<script src="js/popper.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.easing.1.3.js"></script>
-	<script src="js/jquery.waypoints.min.js"></script>
-	<script src="js/jquery.stellar.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/aos.js"></script>
-	<script src="js/jquery.animateNumber.min.js"></script>
-	<script src="js/scrollax.min.js"></script>
-
-	<script src="js/main.js"></script>
-
-</body>
-
+        		</div>
+        	</div>
+        </section>
+        <!--================End My Tabs Area =================-->
+        
+        <!--================Home Gallery Area =================-->
+        <section id="gallery_section" class="home_gallery_area p_120">
+        	<div class="container">
+        		<div class="main_title">
+        			<h2>Projects</h2>
+        		</div>
+        		<div class="isotope_fillter">
+        			<ul class="gallery_filter list">
+						<li class="active" data-filter="*"><a href="#">All</a></li>
+						<li data-filter=".software"><a href="#">Software</a></li>
+						<li data-filter=".hardware"><a href="#">Hardware</a></li>
+						<li data-filter=".printing"><a href="#">3D Printing</a></li>
+					</ul>
+        		</div>
+        	</div>
+        	<div class="container">
+        		<div class="gallery_f_inner row imageGallery1">
+        			<div class="col-lg-4 col-md-4 col-sm-6 printing">
+        				<div class="h_gallery_item">
+        					<div class="g_img_item">
+								<div style="left: 0px; width: 100%; height: 0px; position: relative; padding-bottom: 53%; overflow: hidden;">
+									<iframe src="liquid_animation.html"
+												allowfullscreen
+												style="position: absolute; top: 0px; left: 0px; height: 100%; width: 1px; min-width: 100%; *width: 100%;"
+												frameborder="0"
+												scrolling="no"
+												name="Interactive view">
+									</iframe>
+									<div class="text">
+										<h3>Drag to rotate the printer. Double click for fullscreen.</h3>
+									</div>
+								</div>
+        					</div>
+        					<div class="g_item_text">
+        						<h4>Liquid 3D Printer</h4>
+								<p>Collab with Serban Chisca</p>
+								<p>Drag to rotate the printer. Double click for fullscreen.</p>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="col-lg-4 col-md-4 col-sm-6 software">
+        				<div class="h_gallery_item">
+        					<div class="g_img_item">
+        						<img class="img-fluid" src="img/gallery/influential_users.jpg" alt="">
+        						<a class="light" href="img/gallery/influential_users.jpg"><img src="img/gallery/icon.png" alt=""></a>
+        					</div>
+        					<div class="g_item_text">
+        						<h4>YouTube Influential Users</h4>
+        						<p>Web Application</p>
+        					</div>
+        				</div>
+        			</div>
+					<div class="col-lg-4 col-md-4 col-sm-6 software">
+        				<div class="h_gallery_item">
+        					<div class="g_img_item">
+        						<img class="img-fluid" src="img/gallery/consumer_perception.jpg" alt="">
+        						<a class="light" href="img/gallery/consumer_perception.jpg"><img src="img/gallery/icon.png" alt=""></a>
+        					</div>
+        					<div class="g_item_text">
+        						<h4>YouTube Consumer perception</h4>
+        						<p>Python GUI App</p>
+        					</div>
+        				</div>
+        			</div>
+					<div class="col-lg-4 col-md-4 col-sm-6 printing">
+        				<div class="h_gallery_item">
+        					<div class="g_img_item">
+        						<img class="img-fluid" src="img/gallery/mendelmax_mk3.jpg" height="340px" alt="">
+        						<a class="light" href="img/gallery/mendelmax_mk3.jpg"><img src="img/gallery/icon.png" alt=""></a>
+        					</div>
+        					<div class="g_item_text">
+        						<h4>MendelMax Mk3</h4>
+        						<p>High performance 3D printer</p>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="col-lg-4 col-md-4 col-sm-6 printing">
+        				<div class="h_gallery_item">
+        					<div class="g_img_item">
+        						<img class="img-fluid" src="img/gallery/mendelmax_mk2.jpg" height="340px" alt="">
+        						<a class="light" href="img/gallery/mendelmax_mk2.jpg"><img src="img/gallery/icon.png" alt=""></a>
+        					</div>
+        					<div class="g_item_text">
+        						<h4>MendelMax Mk2</h4>
+        						<p>Dual head 3D printer</p>
+        					</div>
+        				</div>
+        			</div>
+					<div class="col-lg-4 col-md-4 col-sm-6 printing">
+        				<div class="h_gallery_item">
+        					<div class="g_img_item">
+        						<img class="img-fluid" src="img/gallery/mendelmax_mk1.jpg" height="340px" alt="">
+        						<a class="light" href="img/gallery/mendelmax_mk1.jpg"><img src="img/gallery/icon.png" alt=""></a>
+        					</div>
+        					<div class="g_item_text">
+        						<h4>MendelMax MK1</h4>
+        						<p>Cost Effective 3D printer</p>
+        					</div>
+        				</div>
+        			</div>
+					<div class="col-lg-4 col-md-4 col-sm-6 software">
+        				<div class="h_gallery_item">
+        					<div class="g_img_item">
+        						<img class="img-fluid" src="img/gallery/failure_detection.jpg" alt="">
+        						<a class="light" href="img/gallery/failure_detection.jpg"><img src="img/gallery/icon.png" alt=""></a>
+        					</div>
+        					<div class="g_item_text">
+        						<h4>Failure Detection for 3D Printing</h4>
+        						<p>Using Computer Vision Techniques</p>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="col-lg-4 col-md-4 col-sm-6 hardware">
+        				<div class="h_gallery_item">
+        					<div class="g_img_item">
+        						<img class="img-fluid" src="img/gallery/home_automation.jpg" alt="">
+        						<a class="light" href="img/gallery/home_automation.jpg"><img src="img/gallery/icon.png" alt=""></a>
+        					</div>
+        					<div class="g_item_text">
+        						<h4>Home Automation System</h4>
+								<p>Smartphone controlled system</p>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="col-lg-4 col-md-4 col-sm-6 hardware">
+        				<div class="h_gallery_item">
+        					<div class="g_img_item">
+        						<img class="img-fluid" src="img/gallery/autonomous_vehicle.jpg" alt="">
+        						<a class="light" href="img/gallery/autonomous_vehicle.jpg"><img src="img/gallery/icon.png" alt=""></a>
+        					</div>
+        					<div class="g_item_text">
+        						<h4>Autonomous Navigation Vehicle</h4>
+        						<p>1/10 RC vehicle</p>
+        					</div>
+        				</div>
+        			</div>
+					<div class="col-lg-4 col-md-4 col-sm-6 hardware">
+        				<div class="h_gallery_item">
+        					<div class="g_img_item">
+        						<img class="img-fluid" src="img/gallery/airplane_model.jpg" alt="">
+        						<a class="light" href="img/gallery/airplane_model.jpg"><img src="img/gallery/icon.png" alt=""></a>
+        					</div>
+        					<div class="g_item_text">
+        						<h4>Remote Controlled Airplane</h4>
+        						<p>Spitfire Model Airplane with gyro stabilization</p>
+        					</div>
+        				</div>
+        			</div>
+					<div class="col-lg-4 col-md-4 col-sm-6 hardware">
+        				<div class="h_gallery_item">
+        					<div class="g_img_item">
+        						<img class="img-fluid" src="img/gallery/line_follower.jpg" alt="">
+        						<a class="light" href="img/gallery/line_follower.jpg"><img src="img/gallery/icon.png" alt=""></a>
+        					</div>
+        					<div class="g_item_text">
+        						<h4>Line Follower Vehicle</h4>
+        						<p>Modular vehicle for following a black line</p>
+        					</div>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </section>
+        <!--================End Home Gallery Area =================-->
+	
+        <!--================Footer Area =================-->
+        <footer class="footer_area p_120">
+        	<div class="container">
+        		<div class="row footer_inner">
+        			<div class="col-lg-9 col-sm-11">
+        				<aside class="f_widget ab_widget">
+        					<div class="f_title">
+        						<h3>About Me</h3>
+        					</div>
+        					<p>A creative and people-oriented software engineer with 1 year experience in a tech startup with focus on software and hardware projects.
+										Skilled in algorithms, artificial inteligence, data science, web development and robotics.</p>
+        					<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+        				</aside>
+        			</div>
+        			<div class="col-lg-3">
+        				<aside class="f_widget social_widget">
+        					<div class="f_title">
+        						<h3>Follow Me</h3>
+        					</div>
+        					<p>Let us be social</p>
+        					<ul class="list">
+								<li><a href="https://www.linkedin.com/in/alexandru-grigoras-3916a011b/"><i class="fa fa-linkedin"></i></a></li>
+								<li><a href="https://twitter.com/10Grigoras"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="https://github.com/alexgrigoras"><i class="fa fa-github"></i></a></li>
+								<li><a href="https://bitbucket.org/%7B99eda1ab-2767-49c8-bc8b-e9597ce0e755%7D/"><i class="fa fa-bitbucket"></i></a></li>
+        					</ul>
+        				</aside>
+        			</div>
+        		</div>
+        	</div>
+        </footer>
+        <!--================End Footer Area =================-->
+        
+        
+        
+        
+        
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/stellar.js"></script>
+        <script src="vendors/lightbox/simpleLightbox.min.js"></script>
+        <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+        <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+        <script src="vendors/isotope/isotope.pkgd.min.js"></script>
+        <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+        <script src="vendors/popup/jquery.magnific-popup.min.js"></script>
+        <script src="js/jquery.ajaxchimp.min.js"></script>
+        <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
+        <script src="vendors/counter-up/jquery.counterup.min.js"></script>
+        <script src="js/mail-script.js"></script>
+        <script src="js/theme.js"></script>
+    </body>
 </html>
