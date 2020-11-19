@@ -3,6 +3,10 @@
 @Author: Rocky Ahmed
 @URL: http://wethemez.com
 Author E-mail: rockybd1995@gmail.com
+
+This file contains the styling for the actual theme, this
+is the file you need to edit to change the look of the
+theme.
 ---------------------------------------------------- */
 /*=====================================================================
 @Template Name: Builder Construction 
@@ -92,16 +96,19 @@ button:focus {
   margin-top: 25px; }
 
 @media (min-width: 1200px) {
-  .container {
-    max-width: 1170px; } }
+	.container {
+		max-width: 1170px; } }
 
 @media (min-width: 1620px) {
-  .box_1620 {
-    max-width: 1620px;
-    margin: auto;
-    width: 100%;
-    padding-left: 0px;
-    padding-right: 0px; } }
+	.box_1620 {
+		max-width: 1620px;
+		margin: auto;
+		width: 100%;
+		padding-left: 0px;
+		padding-right: 0px; 
+	} 
+}
+	
 /* Main Title Area css
 ============================================================================================ */
 .main_title {
@@ -149,8 +156,7 @@ button:focus {
         .header_area .navbar .nav .nav-item .nav-link:after {
           display: none; }
       .header_area .navbar .nav .nav-item:hover .nav-link, .header_area .navbar .nav .nav-item.active .nav-link {
-        color: grey;
-		}
+        color: #fff; }
       .header_area .navbar .nav .nav-item.submenu {
         position: relative; }
         .header_area .navbar .nav .nav-item.submenu ul {
@@ -237,7 +243,7 @@ button:focus {
     box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1); }
     .header_area.navbar_fixed .main_menu .navbar .nav .nav-item .nav-link {
       line-height: 70px; }
-	  
+
 .top_menu {
   background: #f9f9ff; }
   .top_menu .header_social li {
@@ -307,7 +313,7 @@ button:focus {
     border-radius: 12px;
     position: relative;
     bottom: -200px;
-    background: black;
+    background: #fff;
     padding: 30px;
     box-shadow: 0px 20px 80px 0px rgba(153, 153, 153, 0.3); }
   .home_banner_area .banner_inner {
@@ -2575,7 +2581,7 @@ h6 {
         background: #fff;
         color: #222222; }
 .tabs_inner .tab-content .tab-pane .list {
-  max-width: 900px;
+  max-width: 460px;
   margin: auto;
   position: relative;
   padding-top: 40px;
@@ -2586,7 +2592,7 @@ h6 {
     width: 5px;
     background: rgba(255, 255, 255, 0.2);
     position: absolute;
-    left: 20%;
+    left: 46%;
     transform: translateX(-50%);
     top: -5px; }
   .tabs_inner .tab-content .tab-pane .list li {
@@ -2599,9 +2605,19 @@ h6 {
       display: block;
       background: rgba(255, 255, 255, 0.2);
       position: absolute;
-      left: 20%;
+      left: 46%;
       top: 30px;
       transform: translateX(-50%); }
+      .tabs_inner .tab-content .tab-pane .list li span:before {
+        content: '';
+        height: 7px;
+        width: 7px;
+        background: #fff;
+        border-radius: 50%;
+        position: absolute;
+        left: 52%;
+        top: 4px;
+        transform: translateX(-50%); }
     .tabs_inner .tab-content .tab-pane .list li:last-child {
       margin-bottom: 0px; }
     .tabs_inner .tab-content .tab-pane .list li .media .d-flex {
@@ -2696,23 +2712,23 @@ h6 {
   letter-spacing: 2.1px;
   font-weight: normal;
   margin-bottom: 12px;
-  color: white; }
+  color: #222222; }
 .personal_text h4 {
   font-size: 16px;
   font-weight: 500;
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   margin-bottom: 20px;
-  color: white; }
+  color: #222222; }
 .personal_text h3 {
   font-size: 48px;
   text-transform: uppercase;
   margin-bottom: 15px;
-  color: white; }
+  color: #222222; }
 .personal_text p {
   font-family: "Roboto", sans-serif;
   max-width: 540px;
-  color: #999999;
+  color: #777777;
   margin-bottom: 40px; }
 .personal_text .basic_info li {
   margin-bottom: 15px; }
@@ -2720,14 +2736,14 @@ h6 {
     position: relative;
     padding-left: 40px;
     font-size: 16px;
-    color: #999999; }
+    color: #777777; }
     .personal_text .basic_info li a i {
       position: absolute;
       left: 0px;
       top: 50%;
       transform: translateY(-50%);
       font-size: 20px;
-      color: #999999; }
+      color: #766dff; }
   .personal_text .basic_info li:last-child {
     margin-bottom: 0px; }
 .personal_text .personal_social {

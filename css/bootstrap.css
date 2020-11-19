@@ -922,6 +922,13 @@ pre code {
     margin-left: 91.666667%
 }
 
+.col-md-2 {
+	-ms-flex: 0 0 50%;
+	flex: 0 0 50%;
+	max-width: 50%
+	margin: 10px;
+}
+
 @media (min-width:576px) {
     .col-sm {
         -ms-flex-preferred-size: 0;
@@ -1114,9 +1121,11 @@ pre code {
         max-width: 8.333333%
     }
     .col-md-2 {
-        -ms-flex: 0 0 16.666667%;
-        flex: 0 0 16.666667%;
-        max-width: 16.666667%
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+		margin-top: 5px;
+		margin-bottom: 5px;
     }
     .col-md-3 {
         -ms-flex: 0 0 25%;
@@ -1267,6 +1276,13 @@ pre code {
 }
 
 @media (min-width:992px) {
+	.col-md-2 {
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+		margin-top: 5px;
+		margin-bottom: 5px
+    }
     .col-lg {
         -ms-flex-preferred-size: 0;
         flex-basis: 0;
@@ -1439,6 +1455,11 @@ pre code {
 }
 
 @media (min-width:1200px) {
+	.col-md-2 {
+        -ms-flex: 0 0 16.666667%;
+        flex: 0 0 16.666667%;
+        max-width: 16.666667%
+    }
     .col-xl {
         -ms-flex-preferred-size: 0;
         flex-basis: 0;
@@ -1608,6 +1629,17 @@ pre code {
     .offset-xl-11 {
         margin-left: 91.666667%
     }
+}
+
+@media (min-width:1620px) {
+	.col-md-2 {
+        -ms-flex: 0 0 12.5%;
+        flex: 0 0 12.5%;
+        max-width: 12.5%
+    }
+	.about-container {
+		min-width: 85%;
+	}
 }
 
 .table {
